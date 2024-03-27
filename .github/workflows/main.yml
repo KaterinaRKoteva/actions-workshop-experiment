@@ -1,6 +1,10 @@
-name: Manual Workflow Training
+name: Workflow Training
 on:
   workflow_dispatch:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 jobs:
   greet:
